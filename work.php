@@ -81,7 +81,7 @@ if(isset($type)){
             </li>
 
             <li class="nav-item">
-              <a class="nav-link waves-effect" value="mainPage" name="link" href="login.php" target="_blank">การจัดการ</a>
+              <a class="nav-link waves-effect" value="mainPage" name="link" href="<?php echo $mainUser?>?link= <?php echo $mainLink?>" target="_blank">การจัดการ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link waves-effect" href="Howtopay.php" target="_blank">วิธีการชำระเงิน</a>
