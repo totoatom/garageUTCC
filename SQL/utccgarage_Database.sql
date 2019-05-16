@@ -1,6 +1,15 @@
 ﻿CREATE DATABASE IF NOT EXISTS `utccgarage` CHARACTER SET UTF8 COLLATE utf8_general_ci;
 USE `utccgarage`;
 
+-- phpMyAdmin SQL Dump
+-- version 4.8.5
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: May 16, 2019 at 07:54 PM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.2.17
+
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
 START TRANSACTION;
@@ -39,15 +48,16 @@ CREATE TABLE `db_user` (
 
 INSERT INTO `db_user` (`ID`, `Email`, `name`, `surname`, `address`, `phone`, `pass`, `type`) VALUES
 (1, 'test@gmail.com', 'ประยุท', '1', '1', '1', '1234', '0'),
-(2, 'admin@gmail.com', 'admin', 'admin', '', '', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', '1'),
+(2, 'admin@mail.com', 'admin', 'admin', '', '', '123456', '1'),
 (14, 'test123@gmail.com', 'aaaa', 'bbbb', '...', '954078649', '123456', '0'),
 (15, 'jame123@gmail.com', 'สุชาติ', 'ชาญเชิงศิลปกุล', '...', '954078649', 'a0f16554717283066f18541d1855090adce2464756c999ff2ebd52fc1c6744ac', '0'),
 (16, 'jame1234@gmail.com', 'dddd', 'ccccsdasdas', 'dsaasadas', '0954078649', 'a0f16554717283066f18541d1855090adce2464756c999ff2ebd52fc1c6744ac', '0'),
 (18, 'jame4058@gmail.com', 'สุชาติ ชาญเชิงศิลปกุล', 'ชาญเชิงศิลปกุล', '...', '0954078649', '123456', '0'),
 (19, 'zzz123@gmail.com', 'ABC', 'DDEF', 'DDDDDDD', '789789', '123456', '0'),
 (20, 'toto@mail.com', 'tototank.io', '', '', '989898989', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', '0'),
-(21, 'jame@mail.com', 'Suchart', 'Chancherngsilapakul', 'บ้านเลขที่ 80 ซ.พันธ์จิตต์ 2 ถ.สันติภาพ แขวง ป้อมปราบ เขต ป้อมปราบศูตรพ่าย กรุงเทพ 10100', '0954078649', '8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92', '0'),
-(22, 'charatkiller@gmail.com', 'charat', 'Patta', '111/8', '0955759754', '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4', '0');
+(21, 'jame@mail.com', 'Suchart', 'Chancherngsilapakul', 'บ้านเลขที่ 80 ซ.พันธ์จิตต์ 2 ถ.สันติภาพ แขวง ป้อมปราบ เขต ป้อมปราบศูตรพ่าย กรุงเทพ 10100', '0954078649', '123456', '0'),
+(22, 'charatkiller@gmail.com', 'charat', 'Patta', '111/8', '0955759754', '123456', '0'),
+(23, 'asd123@mail.com', 'ASD', 'XZZ', '804485', '0987456987', '123456', '0');
 
 -- --------------------------------------------------------
 
@@ -77,6 +87,31 @@ INSERT INTO `invoice` (`Invoice_order`, `Invoice_found_problem`, `Invoice_cost`,
 (5, 'กปปปปปป', 0, '2019-05-31', 'รอชำระค่าบริหการ', 9, '2019-05-31 07:02:00'),
 (6, 'คลัชแอร์สึก', 3500, '2019-05-22', 'ชำระเงินเสร็จสิ้น', 11, '2019-05-15 03:45:55'),
 (7, 'อะไหล่เสื่อม', 2500, '2019-05-31', 'ชำระเงินเสร็จสิ้น', 13, '2019-05-16 03:01:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `massage`
+--
+
+CREATE TABLE `massage` (
+  `ID_massage` int(11) NOT NULL,
+  `Email_massage` varchar(30) NOT NULL,
+  `Head` varchar(255) NOT NULL,
+  `Body` varchar(255) NOT NULL,
+  `Phone` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `massage`
+--
+
+INSERT INTO `massage` (`ID_massage`, `Email_massage`, `Head`, `Body`, `Phone`) VALUES
+(1, '', 'เลื่อนวันนัด', '134567798', 989898989),
+(2, '', 'assdd', 'asddd', 989898989),
+(3, '', 'dddd', 'dddd', 989898989),
+(4, '', 'a', '', 989898989),
+(5, 'toto@mail.com', '', '', 989898989);
 
 -- --------------------------------------------------------
 
@@ -136,6 +171,12 @@ ALTER TABLE `invoice`
   ADD UNIQUE KEY `Invoice_status_2` (`Queue_id`);
 
 --
+-- Indexes for table `massage`
+--
+ALTER TABLE `massage`
+  ADD PRIMARY KEY (`ID_massage`);
+
+--
 -- Indexes for table `queue`
 --
 ALTER TABLE `queue`
@@ -149,13 +190,19 @@ ALTER TABLE `queue`
 -- AUTO_INCREMENT for table `db_user`
 --
 ALTER TABLE `db_user`
-  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=24;
 
 --
 -- AUTO_INCREMENT for table `invoice`
 --
 ALTER TABLE `invoice`
   MODIFY `Invoice_order` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `massage`
+--
+ALTER TABLE `massage`
+  MODIFY `ID_massage` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `queue`
