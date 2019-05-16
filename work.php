@@ -37,7 +37,7 @@ if(isset($type)){
   <style>
 
   </style>
-
+  
 </head>
 
 <body id="body">
