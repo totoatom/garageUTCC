@@ -81,7 +81,7 @@ if(isset($type)){
             </li>
 
             <li class="nav-item">
-              <a class="nav-link waves-effect" value="mainPage" name="link" href="<?php echo $mainUser?>?link= <?php echo $mainLink?>" target="_blank">การจัดการ</a>
+              <a class="nav-link waves-effect" value="mainPage" name="link" href="login.php" target="_blank">การจัดการ</a>
             </li>
             <li class="nav-item">
               <a class="nav-link waves-effect" href="Howtopay.php" target="_blank">วิธีการชำระเงิน</a>
@@ -176,56 +176,59 @@ if(isset($type)){
       </div>
       <div class="carousel-inner" align = "center"  >
       <div class="carousel-item active">
-        <img class="d-block" id="threeslide" src="img/Intro2.jpg" alt="First slide" style="width: 90%;height: 400px; margin-bottom: 30px">
+        <img class="d-block" id="threeslide" src="img/vision.jpg" alt="vision">
         <div class="carousel-caption d-md-block">
           <h3>ด้านวิสัยทัศน์</h3>
-          <p>เป็นผู้นำธุรกิจด้านอู่ซ่อมสีและเครื่องยนต์ และดำเนินกิจการอย่างต่อเนื่อง โดยการส่งมอบรถที่ซ่อมอย่างมีคุณภาพ และประทับใจ</p>
+          <h5>เป็นผู้นำธุรกิจด้านอู่ซ่อมสีและเครื่องยนต์ และดำเนินกิจการอย่างต่อเนื่อง โดยการส่งมอบรถที่ซ่อมอย่างมีคุณภาพ และประทับใจ</h5>
         </div>
       </div>
     </div>
     <div class="container">
+      <br>
       <h1 style="text-align:center">บริการของเรา</h1>
       <hr>
       </div>
       <div class="row justify-content-center" align="center">
         <div class="col ">
-          <img src="img/MASRI.jpg" id="threepic" class="rounded-circle" alt="Cinque Terre" style="width:200px">
+          <img src="img/c1.jpg" id="threepic" class="rounded-circle" alt="Cinque Terre" style="width:200px">
         </div>
         <div class="col ">
-          <img src="img/featurporch2.jpg" id="threepic" class="rounded-circle" alt="Cinque Terre" style="width:200px;">
+          <img src="img/c2.jpg" id="threepic" class="rounded-circle" alt="Cinque Terre" style="width:200px;">
         </div>
         <div class="col ">
-          <img src="img/sq1.jpg" id="threepic" class="rounded-circle" alt="Cinque Terre" style="width:200px">
+          <img src="img/c3.jpg" id="threepic" class="rounded-circle" alt="Cinque Terre" style="width:200px">
         </div>
       </div>
       <br>
       <div class="row justify-content-center">
         <div class="col" style="margin-left:20px">
-        <center><h4>ถ่ายน้ำมันเครื่องรถยนต์</h4></center>
-          <p>● ดูที่สีของน้ำมันเครื่อง<br>
+          <center><h4>ถ่ายน้ำมันเครื่องรถยนต์</h4></center>
+          <div style="padding-left: 40px; padding-top: 20px"><p>● ดูที่สีของน้ำมันเครื่อง<br>
             ● เปลี่ยนน้ำมันเครื่องทุก 10,000 กิโลเมตร<br>
             ● เสียงเครื่องยนต์ผิดปกติ<br>
             ● ตรวจสอบระดับน้ำมันเครื่อง<br>
-          </p>
+            </p>
+          </div>
         </div>
         <div class="col">
           <center><h4>ซ่อมช่วงล่าง</h4></center>
-          <p>● พวงมาลัยดึงเวลาถนนขรุขระ<br>
+          <div style="padding-left: 40px; padding-top: 20px"><p>● พวงมาลัยดึงเวลาถนนขรุขระ<br>
               ● วิ่งทางขรุขระแล้วดัง<br>
               ● วิ่งทางตรง แต่ล้อไม่ตรง ควบคุมรถไม่นิ่ง<br>
               ● วิ่งทางขรุขระ แล้วสะท้านขึ้นพวงมาลัย<br>
               ● เดินหน้า วิ่งทางตรงแล้วพวงมาลัยเอียง<br>
-          </p>
+            </p>
+          </div>
         </div>
         <div class="col">
-        <center><h4>อาการอื่นๆ</h4></center>
-          <p>● กลิ่นเหม็นไหม้ <br>
-              ● มีเสียงดังแปลก​ ​ๆ <br>
-              ● มีควันสีขาวออกมาจากท่อไอเสีย <br>
-              ● ​มีน้ำหรือน้ำมันหยดที่พื้น <br>
-              ● สตาร์ทเครื่องยนต์นานกว่าปกติ<br>
-            </p>
-
+          <center><h4>อาการอื่นๆ</h4></center>
+          <div style="padding-left: 40px; padding-top: 20px"><p>● กลิ่นเหม็นไหม้ <br>
+                ● มีเสียงดังแปลก​ ​ๆ <br>
+                ● มีควันสีขาวออกมาจากท่อไอเสีย <br>
+                ● ​มีน้ำหรือน้ำมันหยดที่พื้น <br>
+                ● สตาร์ทเครื่องยนต์นานกว่าปกติ<br>
+              </p>
+            </div>
         </div>
      
   </section>
@@ -271,9 +274,17 @@ if(isset($type)){
                 <i class="fa fa-google-plus"> </i>
               </a>
             </li>
+            <li class="list-inline-item">
+              <a class="btn-floating btn-gplus mx-1">
+                <i class="fa fa-phone"> </i>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <p>(+66)89-882-6511</p>
+            </li>
           </ul>
-          <h5>โทร: </h4>
-            <p>(+66)89-882-6511</p>
+          <!-- <h4>โทร: </h4>
+            <p>(+66)89-882-6511</p> -->
 
         </div>
         <!-- Grid column -->
@@ -283,10 +294,6 @@ if(isset($type)){
 
     </div>
     <!-- Footer Text -->
-
-    <!-- Copyright -->
-    <
-    <!-- Copyright -->
 
   </footer>
   <!-- Footer -->
