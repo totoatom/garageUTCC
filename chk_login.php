@@ -53,7 +53,8 @@ session_start();
 						$_SESSION["name"] = $row["name"];
                     	$_SESSION["surname"] = $row["surname"];
 						$_SESSION["id"] = $row["ID"];
-						
+                        $_SESSION["adress"] = $row["adress"];
+                        $_SESSION["phone"] = $row["phone"];
 						$_SESSION["type"] = $row["type"];
 
                       if($_SESSION["type"]=="0"){ //ถ้าเป็น user ให้กระโดดไปหน้า 

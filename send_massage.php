@@ -19,7 +19,7 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
 <!DOCTYPE html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-    <title>แก้ไขข้อมูลส่วนตัว</title>
+    <title>ติดต่อผู้ดูแล</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
     <link rel="stylesheet" href="css/style.css" type="text/css"/>
     <link href="css/mdb.min.css" rel="stylesheet">

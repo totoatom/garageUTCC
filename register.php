@@ -32,6 +32,8 @@ if (isset($_POST['signup'])) {
             $_SESSION["name"] = $name;
             $_SESSION["surname"] = $surname;
             $_SESSION["type"] = $type;
+            $_SESSION["address"] = $address;
+            $_SESSION["phone"] = $phone;
             if (isset($_SESSION['id'])) {
                 print_r($_SESSION);
                 header("Location: work.php");
