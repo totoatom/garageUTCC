@@ -69,7 +69,7 @@ $row = mysqli_fetch_array($result, MYSQLI_ASSOC);
                                 </div>                               
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-success btn-lg" name="massage" id="massage">ส่งข้อความ</button>
-                                    <a href="javascript:history.back" class="btn btn-outline-danger btn-lg" >ย้อนกลับ</a>
+                                    <a href="fn_invoice.php" class="btn btn-outline-danger btn-lg" >ย้อนกลับ</a>
                                 </div>                               
                             </form>
                             <!-- Form contact -->
